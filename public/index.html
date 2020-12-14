@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Node Chat App</title>
-  <script defer src="../src/index.js" type="text/javascript"></script>
 </head>
 <body>
   <div>Chat App</div>
+  <form id="msg-form">
+    <input type="text" name="message" placeholder="Message">
+    <button>Submit</button>
+  </form>
+  <button id="send-location">Send Location</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
 </body>
 </html>
