@@ -1,13 +1,13 @@
-const generateMessage = text => {
+const generateMessage = data => {
   return {
-    text,
+    ...data,
     createdAt: new Date().getTime(),
   };
 };
 
-const generateLocationMessage = pos => {
+const generateLocationMessage = data => {
   return {
-    url: `https://google.com/maps?q=${pos.latitude},${pos.longitude}`,
+    ...data,
     createdAt: new Date().getTime(),
   };
 };
